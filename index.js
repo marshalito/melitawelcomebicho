@@ -8,7 +8,7 @@ const fs = require('fs')
 
 bot.on('ready', () =>{
   console.log(`Estou ativado! <${bot.user.username}>`);
-  bot.user.setActivity("!ajuda", {type: "PLAYING"});
+  bot.user.setActivity("boas vindas! :D", {type: "PLAYING"});
 });
 bot.commands = new Discord.Collection();
 fs.readdir("./comandos", (err, files) => {
@@ -60,7 +60,7 @@ bot.on('guildMemberAdd', member => {
 bot.on('guildMemberAdd', member =>{
   let embed = new Discord.RichEmbed()
   .setColor('#2fd12c')
-  .setDescription(`Olá. Seja **bem-vindo(a)** ao Discord da FutureTechnology.`)
+  .setDescription(`Olá. Seja **bem-vindo(a)** ao Discord da minha casa!`)
   .setTimestamp()
 
   member.sendEmbed(embed);
